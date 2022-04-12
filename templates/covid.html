@@ -1,0 +1,48 @@
+<html>
+     <style>
+        h3{
+           color:brown;
+           text-align: center;
+           text-decoration: underline;
+           text-transform:capitalize;
+        }
+        body{
+          color: blue;
+          text-align: center;
+          margin: auto;
+          text-transform: capitalize;
+          height: 200px;
+          background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        }
+
+         
+
+         
+
+        
+
+      
+     </style>
+
+   <body>
+      
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>covid information:</h3>
+         adarnumber<br>
+         <input type = "text" name = "adarnumber" /></br>
+         
+         name<br>
+         <input type = "text" name="name" /></br>
+         
+         age<br>
+         <input type = "text" name = "age" /><br>
+         
+         doses<br>
+         <input type = "text" name = "doses" /><br>
+          
+         <input type= "submit" value='submit'/><br>
+         
+
+      </form>
+   </body>
+</html>

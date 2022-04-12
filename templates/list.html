@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      td{
+          color:blueviolet;
+          font: size 20px;
+          column-width: 20px;
+          text-align: center;
+          text-transform:capitalize;
+      
+      }
+      thead{color:rgb(67, 42, 165);
+           text-align: center;
+           text-transform:capitalize;
+        }
+      
+        img {
+             border-radius: 8px;
+             }
+
+        
+      
+ 
+ </style>
+   <body>
+      <img src="corna.jpg" alt="corona" width="300" height="300">
+
+      <table border = 1>
+         <thead>
+
+            <td style="color:rgb(200, 42, 72)">adarnumber</td>
+            <td style="color:rgb(200, 42, 72)">name</td>
+            <td style="color:rgb(200, 42, 72)">age</td>
+            <td style="color:rgb(200, 42, 72)">doses</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["adarnumber"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td> {{ row["age"]}}</td>
+               <td>{{row['doses']}}</td>	
+            </tr>
+            {% endfor %}
+        </table>
+        
+        <a href = "/">Go back to home page</a>
+     </body>
+  </html>
